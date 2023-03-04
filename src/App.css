@@ -31,7 +31,7 @@
 }
 
 #advice-id {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -50,8 +50,6 @@ button {
   padding: 20px;
   border-radius: 50%;
   border: none;
-  /* margin-left: 50%;
-  transform: translateX(-50%); */
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -66,4 +64,38 @@ button:hover {
 
 .text-container {
   height: 100px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .container {
+    max-width: 330px;
+    height: 400px;
+  }
+
+  .divider img {
+    content: url(./images/pattern-divider-mobile.svg);
+    position: relative;
+    top: 30px;
+    width: 80%;
+  }
+
+  button {
+    top: 60px;
+  }
+
+  .text-container {
+    height: 200px;
+  }
 }

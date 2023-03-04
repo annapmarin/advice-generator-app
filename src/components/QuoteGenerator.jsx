@@ -8,8 +8,8 @@ function QuoteGenerator() {
       const obtainData = async () => {
         const data = await fetch('https://api.adviceslip.com/advice')
         const dataResult = await data.json()
-        const dataResultArray = Object.values(dataResult)
-        setAdvices(dataResultArray)
+        // const dataResultArray = Object.values(dataResult)
+        setAdvices(dataResult.slip)
       }
   
       obtainData()
@@ -17,16 +17,16 @@ function QuoteGenerator() {
 
     return (
         <>
-          {advices.map((adv, i) => {
-            return(
-              <div key={i}>
-                <p id="advice-id"><span>Advice #{adv.id}</span></p>
-                <div className="text-container">
-                <p>{adv.advice}</p>
-                </div>
+          {
+            advices ?
+            <>
+              <p id="advice-id"><span>Advice #{advices.id}</span></p>
+              <div className="text-container">
+              <p>{advices.advice}</p>
               </div>
-            )
-          })}
+            </>
+            : null
+          }
         
         </>
        
