@@ -4,15 +4,15 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor]. F
 
 ## Table of contents
 
-- [Overview]
-  - [The challenge]
-  - [Screenshot]
-  - [Links]
-- [My process]
-  - [Built with]
-  - [What I learned]
-- [Author]
-- [Acknowledgments]
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-[](./src/images/ScreenShot.png)
+![](./src/images/ScreenShot.png)
 
 ### Links
 
